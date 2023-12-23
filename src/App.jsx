@@ -5,6 +5,7 @@ import Buscador from './components/Buscador'
 import Formulario from './components/Formulario';
 import { BaseColaboradores } from './components/BaseColaboradores'
 import Alert from './components/Alert';
+import Desarrolladores from './components/Desarrolladores';
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
               <div className="col">
                   <Buscador listaColaboradoresFiltro={listaColaboradoresFiltro} setListaColaboradoresFiltro={setListaColaboradoresFiltro} listaColaboradores={listaColaboradores}></Buscador>
                   <Listado listaColaboradores={listaColaboradores} listaColaboradoresFiltro={listaColaboradoresFiltro}></Listado>
+                  <p><b>Proyecto desarrollado por:</b></p>
+                  <Desarrolladores nombre="Belén Vera"></Desarrolladores>
+                  <Desarrolladores nombre="Gabriel Cartes"></Desarrolladores>
               </div>
               <div className="col">
                   <Formulario listaColaboradores={listaColaboradores} setListaColaboradores={setListaColaboradores} setSuccess={setSuccess} setError={setError} setListaColaboradoresFiltro={setListaColaboradoresFiltro}></Formulario>
